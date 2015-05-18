@@ -1,3 +1,8 @@
+require './mini_tasks_migration.rb'
+MiniTasksMigration.migrate(:up)
+
+require './tasks_migration.rb'
+TasksMigration.migrate(:up)
 
 require './assignments_migration.rb'
 AssignmentsMigration.migrate(:up)
